@@ -1,0 +1,174 @@
+.filter__widget {
+  & select {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-transform: capitalize;
+
+    &:focus {
+      outline: none;
+    }
+
+    & option {
+      font-size: 0.8rem;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.search__box {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  padding-right: 16px;
+  padding-left: 2px;
+
+  & input {
+    width: inherit;
+    border: none;
+    outline: none;
+    padding: 8px 10px;
+  }
+
+  & span {
+    color: var(--primary-color);
+  }
+}
+
+.filter__notfound {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+// shop details
+
+.product__details {
+  margin-top: 50px;
+
+  & h2 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 2px;
+    letter-spacing: 0.5px;
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    gap: 0px 30px;
+
+    & span i {
+      color: coral;
+    }
+
+    & p span {
+      color: coral;
+      font-weight: 500;
+    }
+  }
+
+  &__price {
+    display: block;
+    margin: 10px 0px;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  &__decs {
+    font-size: 0.9rem;
+  }
+}
+
+.tab {
+  &__details__wrapper {
+    padding-top: 0;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0px 20px;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  &__content {
+    margin-top: 20px;
+
+    & p {
+      line-height: 30px;
+    }
+  }
+
+  &__review {
+    & h6 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-top: 8px;
+    }
+
+    & span {
+      color: coral;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    & p {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.active__tab {
+  font-weight: 700;
+}
+
+.review__form {
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+
+  & h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+  & .form__group {
+    margin-bottom: 30px;
+
+    & input,
+    & textarea {
+      width: 100%;
+      border: 1px solid var(--primary-color);
+      border-radius: 4px;
+      padding: 8px 20px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  & .review__rating {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    color: coral;
+    font-weight: 600;
+  }
+}
+
+.related__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 30px;
+}

@@ -1,0 +1,104 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+
+/*  import css bootstrap */
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+/* import file scss */
+@import "./variables";
+@import "./components/_header";
+@import "./components/_footer";
+@import "./components/_home";
+@import "./components/_shop";
+@import "./components/_cart";
+@import "./components/_services";
+@import "./components/_product";
+@import "./components/_clock";
+@import "./components/_common";
+@import "./components/_checkout";
+@import "./components/_login";
+
+/* reset browser default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--primary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  color: var(--small-text-color);
+  font-size: 1rem;
+}
+
+h1,
+h2 {
+  font-size: var(--heading-fontSize);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  padding: 60px 0px;
+}
+
+.section__title {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.box__actions {
+  margin-top: -12px;
+  background-color: #fff;
+  color: var(--primary-color);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 16px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+
+  &__menu {
+    & a,
+    & p {
+      text-align: center;
+      min-width: 150px;
+      display: block;
+      line-height: 0;
+      padding: 16px 0px;
+      width: 100%;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--primary-color);
+      &:hover {
+        cursor: pointer;
+        color: var(--primary-color);
+        background-color: var(--card-bg-02);
+      }
+    }
+  }
+}

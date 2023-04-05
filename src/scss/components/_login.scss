@@ -1,0 +1,35 @@
+.form__login {
+  padding: 30px;
+  border: 1px solid #eaeaea;
+  box-shadow: rgb(235, 238, 241) 0px 8px 24px;
+  border-radius: 4px;
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  & .form__group input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #eaeaea;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+
+    &:focus {
+      outline-color: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+  }
+
+  & p {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    margin-top: 20px;
+
+    & a {
+      font-weight: 600;
+    }
+  }
+}
